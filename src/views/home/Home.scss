@@ -1,0 +1,13 @@
+.home{
+    @include Mwh(80vw, 80vh);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    .content{
+        .animateBorder{
+
+        }
+    }
+}
+.home:hover {
+    box-shadow: 0 2px 7px rgba(0,0,0,.15);
+}

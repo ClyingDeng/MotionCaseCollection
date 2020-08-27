@@ -1,0 +1,56 @@
+$theme-title-color : #0280ce;
+$theme-color       : #004570;
+$theme-font-color  : #d6d5d5;
+$theme-bg-color    :#000129;
+$title-color       : #ADE6FF; // 标题色
+$header-color      : #00B2FF; //头部字体色
+
+/*宽高*/
+@mixin Mwh($width:100%, $height:100%) {
+  height: $height;
+  width : $width;
+}
+
+@mixin MbgImg($url:'../../assets/home/', $img:'Frame_ornament1.png') {
+  background     : url($url+$img) no-repeat;
+  background-size: 100% 100%;
+}
+
+%displaycenter {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+%displayaround {
+  display        : flex;
+  justify-content: space-around;
+  align-items    : center;
+}
+
+%displaybetween {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+%displayColumnCenter {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+}
+
+%displayColumnAround {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-around;
+  align-items    : center;
+}
+
+%absolutecenter {
+  position : absolute;
+  top      : 50%;
+  left     : 50%;
+  transform: translate(-50%, -50%);
+}

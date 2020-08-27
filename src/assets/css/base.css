@@ -1,0 +1,527 @@
+/* 改变主题颜色 */
+:root {
+    --font-color         : #1b1b1b;
+    --body-bg            : #F5F7FB;
+    --foot-bg            : #FFF;
+    --member-list-bg     : #fff;
+    --input-bg           : rgba(245, 247, 251, 1);
+    --border-color       : rgba(239, 241, 246, 1);
+    --operate-list-shadow: #ebebeb;
+    --scrollbar-bg       : #EFF1F6;
+    --footer-filter      : 0;
+    --main-scene-color   : rgba(182, 255, 247, 1);
+  }
+  
+  button:hover {
+    filter: brightness(1.1);
+  }
+  
+  /*清除默认样式*/
+  
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  p,
+  iframe,
+  table,
+  tbody,
+  tfoot,
+  thead,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  pre,
+  form,
+  button,
+  input,
+  textarea,
+  th,
+  td,
+  fieldset,
+  span,
+  b,
+  i,
+  em,
+  strong {
+    margin     : 0;
+    padding    : 0;
+    font-weight: 400;
+  }
+  
+  ul,
+  ol,
+  dl {
+    list-style-type: none;
+  }
+  
+  li {
+    list-style    : none;
+    vertical-align: top;
+  }
+  
+  html {
+    font-family             : "SourceHanSans";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust    : 100%;
+    color                   : var(--font-color);
+    height                  : 100%;
+    width                   : 100%;
+  }
+  
+  input,
+  button,
+  textarea,
+  select,
+  optgroup,
+  option {
+    font-family: inherit;
+    font-size  : inherit;
+    font-style : inherit;
+    font-weight: inherit;
+  }
+  
+  input,
+  button,
+  select {
+    overflow      : visible;
+    vertical-align: middle;
+    outline       : none;
+    border        : none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    font-size      : 100%;
+    font-weight    : normal;
+  }
+  
+  table,
+  tr,
+  th,
+  td {
+    padding    : 0;
+    font-size  : 100%;
+    font-weight: normal;
+  }
+  
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family            : "SourceHanSans", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
+    font-size              : 14px;
+    color                  : var(--font-color);
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    resize                 : none;
+    outline                : none;
+  }
+  
+  i {
+    font-style: normal;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+  }
+  
+  a,
+  area {
+    outline: none;
+  }
+  
+  a {
+    color          : #333;
+    outline        : none;
+    text-decoration: none;
+    cursor         : pointer;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    outline        : none;
+  }
+  
+  a.ie6:hover {
+    zoom: 1;
+  }
+  
+  a:focus {
+    outline: none;
+  }
+  
+  a:hover,
+  a:active {
+    outline: none;
+    color  : #333;
+  }
+  
+  sub,
+  sup {
+    vertical-align: baseline;
+  }
+  
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    line-height: normal !important;
+  }
+  
+  /*img*/
+  
+  img {
+    border        : 0;
+    vertical-align: top;
+  }
+  
+  a img,
+  img {
+    -ms-interpolation-mode: bicubic;
+  }
+  
+  .img-responsive {
+    max-width: 100%;
+    height   : auto;
+  }
+  
+  /*IE下a:hover 背景闪烁*/
+  
+  *html {
+    overflow          : -moz-scrollbars-vertical;
+  }
+  
+  /*HTML5 reset*/
+  
+  header,
+  footer,
+  section,
+  aside,
+  details,
+  menu,
+  article,
+  section,
+  nav,
+  address,
+  hgroup,
+  figure,
+  figcaption,
+  legend {
+    display: block;
+    margin : 0;
+    padding: 0
+  }
+  
+  time {
+    display: inline;
+  }
+  
+  audio,
+  canvas,
+  video {
+    display : inline-block;
+    *display: inline;
+    *zoom   : 1;
+  }
+  
+  audio:not([controls]) {
+    display: none;
+  }
+  
+  legend {
+    width        : 100%;
+    margin-bottom: 20px;
+    font-size    : 21px;
+    line-height  : 40px;
+    border       : 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  legend small {
+    font-size: 15px;
+    color    : #999;
+  }
+  
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  
+  fieldset {
+    border-width: 0;
+    padding     : 0.35em 0.625em 0.75em;
+    margin      : 0 2px;
+    border      : 1px solid #c0c0c0;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -moz-box-sizing   : content-box;
+    -webkit-box-sizing: content-box;
+    /* 2 */
+    box-sizing        : content-box;
+  }
+  
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  /*a的默认下划线和字体颜色| 移动端点击蓝边*/
+  
+  /*清除浮动 Clearfix（简写cl）*/
+  
+  .cl:after,
+  .clearfix:after {
+    content   : ".";
+    display   : block;
+    height    : 0;
+    clear     : both;
+    visibility: hidden;
+  }
+  
+  .cl,
+  .clearfix {
+    zoom: 1;
+  }
+  
+  input,
+  img {
+    border        : none;
+    vertical-align: middle;
+  }
+  
+  body {
+    --admin-main-color         : #a7b1c2;
+    --admin-main-bg-color      : #293038;
+    --admin-border-color       : #EBEEF5;
+    --el--primary              : #00a6ff;
+    margin                     : 0 auto;
+    width                      : 100%;
+    height                     : 100%;
+    overflow                   : hidden;
+    font                       : 85%/1 "\9ED1\4F53";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family                : PingFang SC, "SourceHanSans";
+    position                   : relative;
+  }
+  
+  /*不换行**超出隐藏**超出显示显示省略号*/
+  
+  .font_nowrap {
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    word-wrap    : normal;
+  }
+  
+  .cur_p {
+    cursor: pointer;
+  }
+  
+  .models-layout-content {
+    position  : relative;
+    width     : 100%;
+    height    : 100%;
+    padding   : 15px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+  
+  .models-child-content {
+    width        : 100%;
+    min-height   : 100%;
+    padding      : 10px 15px;
+    background   : #fff;
+    box-sizing   : border-box;
+    border-radius: 2px;
+    box-shadow   : 0 1px 2px 0 rgba(0, 0, 0, .1)
+  }
+  
+  .pagination {
+    padding: 10px;
+  }
+  
+  .models-layout-content .table {
+    border: 1px solid #EBEEF5;
+  }
+  
+  .models-layout-content .edit-header {
+    padding-bottom: 10px;
+  }
+  
+  .models-layout-content .el-table th {
+    background: #f2f2f2;
+  }
+  
+  .models-layout-content .el-table thead {
+    color: #666;
+  }
+  
+  .search-content {
+    display      : flex;
+    padding      : 15px;
+    flex-wrap    : wrap;
+    border-bottom: 1px solid #EBEEF5;
+  }
+  
+  .search-content li {
+    display    : flex;
+    align-items: center;
+    margin     : 0 5px 5px 0px;
+  }
+  
+  .search-content .search-input {
+    width      : 200px;
+    margin-left: 10px;
+  }
+  
+  /* 滚动条 */
+  
+  ::-webkit-scrollbar {
+    width     : 0px;
+    height    : 8px;
+    background: transparent;
+    border    : none;
+  }
+  
+  /* 普通按钮效果 */
+  .normal-btn::after,
+  .normal-btn::before {
+    content      : '';
+    position     : absolute;
+    left         : 0;
+    top          : 0;
+    width        : 0;
+    height       : 100%;
+    background   : rgba(19, 17, 23, 1);
+    border-radius: 10px;
+    z-index      : -2;
+  }
+  
+  .normal-btn:hover {
+    z-index   : 1;
+    background: transparent;
+  }
+  
+  .normal-btn:before {
+    transition   : .3s;
+    background   : var(--main-color);
+    border-radius: 10px;
+    z-index      : -1;
+  }
+  
+  .normal-btn:hover:before,
+  .normal-btn:hover:after {
+    width: 100%;
+  }
+  
+  /*滚动条的轨道*/
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border          : none;
+  }
+  
+  /*滚动条的滑块按钮*/
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    opacity      : 0.65;
+    background   : rgba(193, 193, 193, 1);
+  }
+  
+  /*滚动条的上下两端的按钮*/
+  
+  ::-webkit-scrollbar-button {
+    height          : 0;
+    background-color: transparent;
+  }
+  
+  
+  /* 自适应字体 待*/
+  body {
+    --font-ratio                 : 1.25;
+    --font-size0                 : calc(var(--font-size1) / var(--font-ratio)/1.3);
+    --font-size1                 : calc(var(--font-size2) / var(--font-ratio));
+    --font-size2                 : calc(var(--font-base) / var(--font-ratio));
+    --font-size3                 : var(--font-base);
+    --font-size4                 : calc(var(--font-size3) * var(--font-ratio));
+    --font-size5                 : calc(var(--font-size4) * var(--font-ratio));
+    --font-size6                 : calc(var(--font-size5) * var(--font-ratio));
+    --font-size7                 : calc(var(--font-size6) * var(--font-ratio));
+    --font-size8                 : calc(var(--font-size7) * var(--font-ratio));
+    --font-size9                 : calc(var(--font-size8) * var(--font-ratio));
+    --font-size10                : calc(var(--font-size9) * var(--font-ratio));
+    --font-size11                : calc(var(--font-size10) * var(--font-ratio));
+    --font-size12                : calc(var(--font-size11) * var(--font-ratio));
+    --font-size13                : calc(var(--font-size12) * var(--font-ratio));
+    --font-size14                : calc(var(--font-size13) * var(--font-ratio));
+    --font-second-title-size     : 38px;
+    --font-home-solution-size    : 8.33vmin;
+    /* 宽1920像素-180x  宽7680像素-72px */
+    --font-base                  : 0.95vw;
+    --main-menu-animation-time   : 0.6s;
+    --nav-transition-function    : cubic-bezier(0.215, 0.61, 0.355, 1);
+    --nav-active-width           : 6px;
+    --responsive-desapearing-time: 0.6s;
+    --responsive-desapearing-ease: 'ease';
+    --subdiv                     : 39px;
+    --column12                   : 1280px;
+    --main-color                 : rgba(19, 81, 195, 1);
+    --main-normal-color          : rgba(18, 16, 22, 1);
+  }
+  
+  @-moz-document url-prefix() {
+    body {
+      --font-size1 : 11px;
+      --font-size2 : 14px;
+      --font-size3 : 18px;
+      --font-size4 : 23px;
+      --font-size5 : 29px;
+      --font-size6 : 36px;
+      --font-size7 : 45px;
+      --font-size8 : 56px;
+      --font-size9 : 70px;
+      --font-size10: 88px;
+      --font-size11: 110px;
+      --font-size12: 138px;
+      --font-size13: 173px;
+      --font-size14: 216px;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+    body {
+      --column12: 1280px;
+    }
+  }
+  
+  @media screen and (min-width: 1920px) {
+    body {
+      --font-home-solution-size: 8.33vmin;
+    }
+  }

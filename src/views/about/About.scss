@@ -3,7 +3,39 @@
     border       : 1px solid #ccc;
     border-radius: 4px;
     @extend %displaycenter;
+    .typeItem {
+        @include Mwh(7.06vw, 7.16vh);
+        margin: 1vh;
+        cursor: pointer;
+        background-color: rgba($color: #00b1ff, $alpha: 0.2);
+        @extend %displaycenter;
+          @extend %displayColumnCenter;
+  
+          .typeNum {
+            font-size: 2.3vh;
+          }
+  
+          .typeFont {
+            margin-top: 1vh;
+            font-size : 1.6vh;
+            color     : #ccc;
+          }
+      }
 }
+
+@keyframes show2 {
+    24% {
+      background-color: rgba($color: #04F4FD, $alpha: 0.4);
+    }
+  
+    50% {
+      background-color: rgba($color: #00b1ff, $alpha: 0.2);
+    }
+  }
+.lighthight {
+    
+    animation       : show2 12s ease infinite;
+  }
 .about:hover {
     box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
 }

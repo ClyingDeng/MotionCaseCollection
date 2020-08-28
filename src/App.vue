@@ -26,6 +26,7 @@ export default class App extends Vue {}
   text-align: center;
   color: #2c3e50;
   .view {
+    @include Mwh(100vw, calc(100vh - 60px));
     @extend %displaycenter;
   }
 }

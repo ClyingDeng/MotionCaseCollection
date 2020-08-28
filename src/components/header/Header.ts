@@ -3,7 +3,6 @@ import Component from 'vue-class-component';
 
 @Component
 export default class Header extends Vue {
-  private activeName: string = '';
   private menus: object[] = [
     {
       path: '/',
@@ -15,8 +14,8 @@ export default class Header extends Vue {
     }
   ];
     private mounted() {
-        this.activeName = this.$route.path;
-        console.log(this.activeName, this.$route.path);
+        // this.activeName = this.$route.path;
+        // console.log(this.activeName, this.$route.path);
     }
   private getRouter(name: string) {
     this.$router.push({path: name});
